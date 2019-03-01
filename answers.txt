@@ -1,10 +1,36 @@
 Question 1: How are Flask and Django different? What does Django provide for you that Flask does not?
-
+Flask does not handle any kind of persistence like a SQL database, you will need to implement that yourself. In addition to that, django provides an admin panel to manage things.
 
 Question 2: What does REST stand for? When I say something is RESTful, what does that mean?
+REST = Representational state transfer
+Use http methods to define how you create, read, update, delete resources to the servers
 
 Question 3: What does CRUD stand for? For each letter in CRUD, give the associated HTTP method.
+c = create (POST) 
+r = read (GET)
+u = update (PUT)
+d = delete (DELETE)
 
 Question 4: What do HTTP 1XX Status Codes mean? HTTP 2xx? HTTP 3xx? HTTP 4xx? HTTP 5xx?
+1XX:
+Informational status Codes
+
+2XX: 
+Success stats codes which relay information about accepting, rejecting, recieving and completing a task
+
+3XX:
+This class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request
+
+4XX:
+Error codes which represents client error any explain why the error occured.
+
+5XX:
+Error codes which represents server error. The server is aware it is unable to complete the task.
 
 Question 5: What is an XSS attack? Provide one way a site can be vulneratble to an XSS attack.
+Cross site scripting attack
+If I am a hacker, and my html has a script tag doing some requests, I can use that tag to run malicious code
+
+Question 6: What does CORS stand for? What situation in web application development will you need to implement CORS?
+Cross origin resource sharing
+ou need it when you want to allow specific websites to access an API
